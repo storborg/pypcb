@@ -17,6 +17,7 @@ setup(name='pypcb',
       author='Scott Torborg',
       author_email='scott@cartlogic.com',
       install_requires=[
+          'lxml',
           # These are for tests.
           'coverage',
           'nose>=1.1',
@@ -24,6 +25,9 @@ setup(name='pypcb',
       ],
       license='MIT',
       packages=['pypcb'],
+      entry_points=dict(console_scripts=[
+          'pypcb-read=pypcb.cmd:read_main',
+      ]),
       test_suite='nose.collector',
       tests_require=['nose'],
       zip_safe=False)

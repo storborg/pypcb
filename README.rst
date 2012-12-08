@@ -1,4 +1,4 @@
-pypcb - Python's Swiss Army Knife for PCB CAD
+PyPCB - Python's Swiss Army Knife for PCB CAD
 =============================================
 
 Scott Torborg - `Cart Logic <http://www.cartlogic.com>`_
