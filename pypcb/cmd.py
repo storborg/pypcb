@@ -1,6 +1,16 @@
 import sys
 
 from .dialects import eagle
+from . import model
+
+
+def describe_package(package):
+    print repr(package)
+    for pad in package.pads:
+        if isinstance(pad, model.SMDPad):
+            print "   %s - SMD" % pad.name
+        else:
+            print "   %s - TH" % pad.name
 
 
 def read_main():
@@ -10,4 +20,5 @@ def read_main():
     print "Library"
     print library.description
     for package in library.packages:
-        print package
+        print "-" * 80
+        describe_package(package)

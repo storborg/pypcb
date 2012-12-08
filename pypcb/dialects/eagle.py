@@ -13,7 +13,10 @@ def read(fname):
 
 def parse_drawing_element(el):
     tag = el.tag
-    layer = int(el.attrib['layer'])
+    if 'layer' in el.attrib:
+        layer = int(el.attrib['layer'])
+    else:
+        layer = '???'
     if tag == 'wire':
         return drawing.Line(start=(float(el.attrib['x1']),
                                    float(el.attrib['y1'])),
