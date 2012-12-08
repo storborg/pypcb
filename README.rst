@@ -5,6 +5,9 @@ Scott Torborg - `Cart Logic <http://www.cartlogic.com>`_
 
 PyPCB is a Python library intended to provide a single interchange point and an extensible toolchain for working with schematic and PCB layout CAD files.
 
+**At the moment PyPCB is mostly a wishlist and doesn't do much.**
+
+Here's what we want it to do:
 
 Foundation
 ----------
